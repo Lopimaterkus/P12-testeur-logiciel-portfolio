@@ -96,11 +96,11 @@ https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer
 # **Déploiement**
 
 Le site est déployé sur GitHub Pages et est accessible à l'adresse suivante :
-https://armelle06.github.io/P12-testeur-logiciel-portfolio/
+https://lopimaterkus.github.io/P12-testeur-logiciel-portfolio/
 
 # **Contact**
 
 Pour toute question ou collaboration, vous pouvez me contacter via :
 
--**Email** : armelle.barban@gmail.com  
--**LinkedIn** : https://www.linkedin.com/in/armelle-barban-511205271/
+-**Email** : julien.baraer29@gmail.com  
+-**LinkedIn** : https://www.linkedin.com/in/julien-baraer-061780274/
