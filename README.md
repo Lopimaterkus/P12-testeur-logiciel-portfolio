@@ -1,6 +1,6 @@
 # **P12-testeur-logiciel-portfolio**
 
-# **Portfolio de Armelle Barban**
+# **Portfolio de Julien Baraer**
 
 # **Table des matières**
 
