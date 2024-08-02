@@ -1,106 +1,106 @@
-// Function to add the "navbarDark" class to the navbar on scroll
+// Fonction pour ajouter la classe "navbarDark" (ma barre rose) à la barre de navigation lors du défilement
 function handleNavbarScroll() {
     const header = document.querySelector(".navbar");
     window.onscroll = function () {
-        const top = window.scrollY;
-        if (top >= 100) {
-            header.classList.add("navbarDark");
-        } else {
-            header.classList.remove("navbarDark");
-        }
+      const top = window.scrollY; // const qui recupere le nombre de px defilé depuis le haut
+      if (top >= 100) {
+        header.classList.add("navbarDark");
+      } else {
+        header.classList.remove("navbarDark");
+      }
     };
-}
-
-// Function to handle navbar collapse on small devices after a click
-function handleNavbarCollapse() {
+  }
+  
+  // Fonction pour gérer la rétractation de la barre de navigation sur les petits appareils après un clic
+  function handleNavbarCollapse() {
     const navLinks = document.querySelectorAll(".nav-item");
     const menuToggle = document.getElementById("navbarSupportedContent");
-
+  
     navLinks.forEach((link) => {
-        link.addEventListener("click", () => {
-            new bootstrap.Collapse(menuToggle).toggle();
-        });
+      link.addEventListener("click", () => {
+        new bootstrap.Collapse(menuToggle).toggle();
+      });
     });
-}
-
-// Function to dynamically create HTML elements from the JSON file
-function createSkillsFromJSON() {
+  }
+  
+  // Fonction pour créer dynamiquement des éléments HTML à partir du fichier JSON
+  function createSkillsFromJSON() {
     const container = document.querySelector("#skills .container");
     let row = document.createElement("div");
     row.classList.add("row");
-
-    // Load the JSON file
-    fetch("data/skills.json")
-        .then((response) => response.json())
-        .then((data) => {
-            // Iterate through the JSON data and create HTML elements
-            data.forEach((item, index) => {
-                const card = document.createElement("div");
-                card.classList.add("col-lg-4", "mt-4");
-                card.innerHTML = `
-                    <div class="card skillsText">
-                        <div class="card-body">
-                            <img src="./images/${item.image}" />
-                            <h4 class="card-title mt-3">${item.title}</h4>
-                            <p class="card-text mt-3">${item.text}</p>
-                        </div>
-                    </div>
-                `;
-
-                // Append the card to the current row
-                row.appendChild(card);
-
-                // If the index is a multiple of 3 or it's the last element, create a new row
-                if ((index + 1) % 3 === 0 || index === data.length - 1) {
-                    container.appendChild(row);
-                    row = document.createElement("div");
-                    row.classList.add("row");
-                }
-            });
+  
+    // Charger le fichier JSON
+    fetch("C:/Users/rmipo/Documents/P12-testeur-logiciel-portfolio/data/skills.json")
+      .then((response) => response.json())
+      .then((data) => {
+        // Itérer à travers les données JSON data and creation HTML elements
+        data.forEach((item, index) => {
+          //Créer un élément de carte pour chaque compétence
+          const card = document.createElement("div");
+          card.classList.add("col-lg-4", "mt-4");
+          card.innerHTML = `
+                      <div class="card skillsText">
+                          <div class="card-body">
+                              <img class="border-image" src="./images/${item.image}" alt="${item.title}" loading="lazy"/>
+                              <h3 class="card-title mt-3">${item.title}</h3>
+                              <p class="card-text mt-3">${item.text}</p>
+                          </div>
+                      </div>
+                 `;
+          // ajout de alt et du loading !!!
+          // Ajouter la carte à la ligne actuelle
+          row.appendChild(card);
+  
+          // Si l'index est un multiple de 3 ou s'il s'agit du dernier élément, créer une nouvelle ligne
+          if ((index + 1) % 3 === 0 || index === data.length - 1) {
+            container.appendChild(row);
+            row = document.createElement("div");
+            row.classList.add("row");
+          }
         });
-}
-// Function to dynamically create HTML elements from the JSON file
-function createPortfolioFromJSON() {
+      });
+  }
+  // Fonction pour créer dynamiquement des éléments HTML à partir du fichier JSON
+  function createPortfolioFromJSON() {
     const container = document.querySelector("#portfolio .container");
     let row = document.createElement("div");
     row.classList.add("row");
-
-    // Load the JSON file
+  
+    // Charger le fichier JSON
     fetch("data/portfolio.json")
-        .then((response) => response.json())
-        .then((data) => {
-            // Iterate through the JSON data and create HTML elements
-            data.forEach((item, index) => {
-                const card = document.createElement("div");
-                card.classList.add("col-lg-4", "mt-4");
-                card.innerHTML = `
-                    <div class="card portfolioContent">
-                    <img class="card-img-top" src="images/${item.image}" style="width:100%">
-                    <div class="card-body">
-                        <h4 class="card-title">${item.title}</h4>
-                        <p class="card-text">${item.text}</p>
-                        <div class="text-center">
-                            <a href="${item.link}" class="btn btn-success">Lien</a>
-                        </div>
-                    </div>
-                </div>
-                `;
-
-                // Append the card to the current row
-                row.apendChild(card);
-
-                // If the index is a multiple of 3 or it's the last element, create a new row
-                if ((index + 1) % 3 === 0 || index === data.length - 1) {
-                    container.appendChild(row);
-                    row = document.createElement("div");
-                    row.classList.add("row");
-                }
-            });
+      .then((response) => response.json())
+      .then((data) => {
+        //Parcourir les données JSON et créer des éléments HTML
+        data.forEach((item, index) => {
+          const card = document.createElement("div");
+          card.classList.add("col-lg-4", "mt-4");
+          card.innerHTML = `
+                  <div class="card portfolioContent">
+                      <img class="card-img-top" src="images/${item.image}" alt="${item.title}" style="width:100%" loading="lazy">
+                      <div class="card-body">
+                          <h3 class="card-title">${item.title}</h3>
+                          <p class="card-text">${item.text}</p>
+                          <div class="text-center">
+                              <a href="${item.link}" class="btn cli-rose" target="_blank">Lien</a>
+                          </div>
+                      </div>
+                  </div>
+                  `;
+          // Ajouter la carte à la ligne actuelle
+          row.appendChild(card); // erreur de frappe sur appendChild!!
+  
+          // Si l'index est un multiple de 3 ou si c'est le dernier élément, créer une nouvelle ligne
+          if ((index + 1) % 3 === 0 || index === data.length - 1) {
+            container.appendChild(row);
+            row = document.createElement("div");
+            row.classList.add("row");
+          }
         });
-}
-
-// Call the functions to execute the code
-handleNavbarScroll();
-handleNavbarCollapse();
-createSkillsFromJSON();
-createPortfolioFromJSON();
+      });
+  }
+  
+  // Appeler les fonctions pour exécuter le code
+  handleNavbarScroll();
+  handleNavbarCollapse();
+  createSkillsFromJSON();
+  createPortfolioFromJSON();

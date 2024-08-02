@@ -1,20 +1,51 @@
-[
-    {
-        "image": "image1.png",
-        "title": "Booki",
-        "text": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
-        "link": "#"
-    },
-    {
-        "image": "image2.png",
-        "title": "Mon Vieux grimoire",
-        "text": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
-        "link": "#"
-    },
-    {
-        "image": "image3.png",
-        "title": "Kasa",
-        "text": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
-        "link": "#"
-    }
+[   {
+ 
+    "image": "Riding_cities.webp",
+    "title": "Riding Cities",
+    "text": "Dans ce projet, j'ai appris à créer la structure des pages web avec HTML et à les styliser avec CSS, utilisant Figma et Visual Studio Code. Cette expérience m'a permis de maîtriser les bases du développement web et d'intégrer des principes d'ergonomie et d'accessibilité pour concevoir des interfaces utilisateur efficaces et esthétiques",
+    "link": "https://github.com/Lopimaterkus/Riding-cities"
+},
+{
+    "image": "Booki.webp",
+    "title": "Booki",
+    "text": "Dans ce projet, en utilisant Flexbox à partir de la maquette Figma, j'ai conçu ce site avec une mise en page flexible, garantissant ainsi un confort optimal pour l'utilisateur sur toutes les tailles d'écrans. De plus, la qualité du site est attestée par sa validation W3C, ce qui assure sa conformité aux normes web et une expérience utilisateur fluide.",
+    "link": "https://github.com/Lopimaterkus/Booki"
+},
+{
+    "image": "Print_it.webp",
+    "title": "Print It",
+    "text": "Dans le cadre de ce projet, j'ai utilisé JavaScript pour créer un carrousel interactif. J'ai également utilisé GitHub pour versionner et stocker mon travail. En programmant avec JavaScript, j'ai pu appliquer les fondamentaux du langage pour développer des fonctionnalités dynamiques et interactives sur ce projet spécifique.",
+    "link": "https://github.com/Lopimaterkus/lopimaterkus-github.io"
+},
+{
+    "image": "Kasa.webp",
+    "title": "Kasa",
+    "text": "Dans ce projet, j'ai développé le front-end d'une application de location de logement avec React, en utilisant Create React App pour l'initialisation. J'ai créé des composants interactifs, configuré la navigation avec React Router, intégré des données via des appels API, et ajouté des animations CSS. Ces compétences me permettront de mieux comprendre et tester les applications web modernes de manière plus efficace.",
+    "link": "https://github.com/Lopimaterkus/TesteurLogiciel_appli_location_immobiliere_React"
+},
+{
+    "image": "Sophie-Bluel.webp",
+    "title": "Sophie Bluel",
+    "text": "Dans ce projet, j'ai développé la partie Front-End d'un site web pour une architecte d'intérieur en utilisant JavaScript. J'ai manipulé le DOM, géré les événements, et communiqué avec une API pour la première fois. Ces tâches m'ont permis de renforcer mes compétences en JavaScript et de comprendre les interfaces dynamiques. J'ai utilisé des outils comme Figma, Visual Studio Code, GitHub pour le développement.",
+    "link": "https://github.com/Lopimaterkus/Portfolio-architecte-sophie-bluel"
+},
+{
+    "image": "Menu_Maker.webp",
+    "title": "Menu Maker",
+    "text": "Dans ce projet, j'ai planifié le développement d'un site web en rédigeant des spécifications techniques et en organisant le travail avec Notion. En effectuant une veille technologique régulière, j'ai maintenu mes connaissances à jour, notamment en utilisant Wakelet. En présentant la solution technique, j'ai démontré ma capacité à traduire avec précision les besoins du projet en solutions concrètes.",
+    "link": "files/Julien_Baraer_4_presentation_062024.pdf"
+},
+{
+    "image": "Eco_Bliss_Bath.webp",
+    "title": "Eco Bliss Bath",
+    "text": "Dans ce projet, j'ai automatisé les tests pour l'application de vente en ligne d'Eco Bliss Bath, en sélectionnant soigneusement les scénarios critiques, écrivant les scripts avec Cypress et documentant minutieusement les anomalies détectées. Cette expérience m'a permis de renforcer mes compétences en automatisation des tests et de prendre conscience de l'importance cruciale d'une documentation précise et détaillée.",
+    "link": "https://github.com/Lopimaterkus/TesteurLogiciel_Automatisez_des_tests_pour_une_boutique_en_ligne"
+},
+{
+    "image": "Tomsen.webp",
+    "title": "Tomsen",
+    "text": "Dans ce projet, j'ai analysé les spécifications de l'application, identifié les fonctionnalités à tester et élaboré une stratégie de test alignée sur les cycles de développement agile. J'ai utilisé Notion pour gérer le projet et rédigé un cahier de recette détaillé. Cette expérience a renforcé mes compétences en analyse, planification et documentation des tests, garantissant ainsi la qualité et la fiabilité du logiciel.",
+    "link": "files/Baraer_Julien_2_StratégieTest_072024.pdf"
+}
+
 ]
